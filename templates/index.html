@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ title }} - Microblog</title>
+    <title>{{ title }} Micro-blog</title>
 </head>
 <body>
     <h1> Hello World. {{ smth }}Hi {{ name }}</h1>
@@ -11,11 +11,11 @@
     {% if not choice %}
         <p>Thanks we appreciate that</p>
     {% else %}
-        <ul>
-            <li>1. AI and ML</li>
-            <li>2. Software Engineer</li>
-            <li>3. Web Developer</li>
-        </ul>
+        {% for cs_profession in cs_professions %}
+            <ul>
+                <li> {{ cs_profession }}</li>
+            </ul>
+        {% endfor %}
     {% endif %}
 </body>
 </html>
