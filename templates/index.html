@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ title }} Micro-blog</title>
-</head>
-<body>
-    <h1> Hello World. {{ smth }}Hi {{ name }}</h1>
-    <p>{{ text }}</p>
-    <p>{{ choice }}</p>
-    {% if not choice %}
-        <p>Thanks we appreciate that</p>
-    {% else %}
-        {% for cs_profession in cs_professions %}
-            <ul>
-                <li> {{ cs_profession }}</li>
-            </ul>
-        {% endfor %}
-    {% endif %}
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h1>Welcome, Dear Aminjon</h1>
+    <p>This is your created homa page.<br> You are the best AI and ML dev even you did not try it!</p>
+{% endblock %}

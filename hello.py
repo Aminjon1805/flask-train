@@ -6,6 +6,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    choice = True
-    cs_professions = ["AI and ML", "Software Engineer", "Web Developer"]
-    return render_template('index.html', title="Home", name='Aminjon',text="Are you interested in programming???", choice= choice, cs_professions= cs_professions)
+    return render_template('index.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
