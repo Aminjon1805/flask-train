@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>{{ title }} - Microblog</title>
 </head>
 <body>
-$END$
+    <h1> Hello World. {{ smth }}Hi {{ name }}</h1>
+    <p>{{ text }}</p>
+    <p>{{ choice }}</p>
+    {% if not choice %}
+        <p>Thanks we appreciate that</p>
+    {% else %}
+        <ul>
+            <li>1. AI and ML</li>
+            <li>2. Software Engineer</li>
+            <li>3. Web Developer</li>
+        </ul>
+    {% endif %}
 </body>
 </html>
